@@ -116,10 +116,7 @@ iframe {
     .container {
         width: 80%; /* Containerul poate fi puțin mai îngust pe ecrane mari */
     }
-    video {
-        height:Auto;
-        width:Auto;
-        
+            
 
     .video {
         height:500px ;

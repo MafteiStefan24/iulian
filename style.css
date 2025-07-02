@@ -1,152 +1,137 @@
 body {
-            background: pink;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #222;
-        }
-        header {
-            text-align: center;
-            padding: 2rem 1rem 1rem 1rem;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: #2d6cdf;
-            letter-spacing: 2px;
-        }
-        header p {
-            font-size: 1.2rem;
-            color: #555;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-        background: burlywood;
-            border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
-            padding: 2rem;
-        }
-    
-        
-        .map-section {
-            text-align: center;
-        }
-        .map-section h2 {
-            color: #2d6cdf;
-            margin-bottom: 1rem;
-        }
-        .map-section iframe {
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
-            width: 100%;
-            max-width: 600px;   
-            background: pink;
-            height: 350px;
-            border: 0;
-        }
-        @media (max-width: 900px) {
-            .videos {
-                flex-direction: column;
-                align-items: center;
-            }
-            .videos video, .map-section iframe {
-                max-width: 100%;
-                height: 220px;
-            }
-        }
-
-        /* Modern, elegant improvements */
-        body {
-            background: pink;
-            min-height: 100vh;
-        }
-
-        .container {
-            box-shadow: 0 12px 40px rgba(44, 62, 80, 0.18);
-            border: 1px solid #e3eafc;
-            padding: 2.5rem 2rem;
-            margin-top: 3rem;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #1a4fa0;
-            text-shadow: 0 2px 8px rgba(45, 108, 223, 0.08);
-        }
-
-        header p {
-            font-size: 1.3rem;
-            color: #3a3a3a;
-            margin-bottom: 0.5rem;
-        }
-
-        .videos {
-            gap: 2.5rem;
-        }
-
-        .videos video {
-            border: 3px solid #e3eafc;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 6px 24px rgba(44, 62, 80, 0.13);
-        }
-        .poza1{
-            width: 400px;
-            max-width: 400px;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
-            margin-top: 1rem;
-        }
-        .poza2{
-            width:650px;
-        
-            height: 450px;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
-            margin-top: 1rem;
-        }
-
-        /* Responsive styles for mobile devices */
-@media (max-width: 600px) {
-    body {
-        font-size: 16px;
-        margin: 0;
-        padding: 0;
-    }
-    .container {
-        flex-direction: column;
-        padding: 10px;
-    }
-    .videos video,
-    .videos img.poza1 {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-    header h1.scris1 {
-        font-size: 2em;
-        text-align: center;
-    }
-    .map-section iframe {
-        width: 100% !important;
-        min-width: 0;
-        height: 250px;
-    }
-    .map-section h2 {
-        font-size: 1.2em;
-        text-align: center;
-    }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e700ad;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrează conținutul pe orizontală */
+    min-height: 100vh; /* Asigură că body-ul ocupă cel puțin toată înălțimea vizibilă */
 }
 
-/* Ensure container uses flex for desktop */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+}
+
+.scris1 {
+    margin: 0;
+}
+
 .container {
+    width: 100%; /* Lățime inițială pentru majoritatea ecranelor */
+    max-width: 60%; /* Lățime maximă pentru ecrane mari */
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #00bcdd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrează textul din container */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #555;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 10px auto;
+    max-width: 80%;
+}
+
+/* Stiluri generale pentru videoclipuri */
+
+
+/* Stiluri generale pentru imagini */
+img {
+    max-width: 100%; /* Imaginea nu va depăși lățimea containerului său */
+    height: auto; /* Păstrează proporțiile */
+    display: block;
+    margin: 10px auto;
+}
+
+.galerie-imagini {
     display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.galerie-imagini img {
+    width: 100%; /* Pe mobil, imaginile din galerie ocupă toată lățimea */
+    max-width: 300px; /* Limită de lățime pentru imagini individuale în galerie pe ecrane mai mari */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+iframe {
+    max-width: 100%;
+    width: 600px; /* Lățime implicită pentru iframe */
+    height: 450px; /* Înălțime implicită pentru iframe */
+    border: 0;
+    margin: 10px auto;
+    display: block;
+}
+
+.biografie ul {
+    text-align: left;
+    display: inline-block; /* Permite centrul blocului ul în interiorul containerului */
+}
+
+---
+
+
+/* Media Query pentru ecrane mici (mobile - sub 768px lățime) */
+
+    .container                                                                 
+
+
+   
+    iframe {
+        height: 300px; /* Ajustează înălțimea hărții pentru ecrane mici */
+    }
+
+
+/* Media Query pentru ecrane medii și mari (tablete și laptopuri/desktop-uri - de la 769px lățime în sus) */
+@media (min-width: 769px) {
+    .container {
+        width: 80%; /* Containerul poate fi puțin mai îngust pe ecrane mari */
+    }
+
+    .video {
+        height:500px ;
+        width: 1500px ; /* Videoclipurile ocupă 80% din lățimea containerului */
+        max-width: 640px; /* Limitează lățimea maximă a videoclipurilor pe ecrane mari */
+        /* Poți ajusta 'max-width' aici (e.g., 720px, 854px) pentru dimensiunea dorită */
+    }
+}
+.poza2{
+    width:100%;
+    
+    height: 500px; /* Păstrează proporțiile imaginii */
+
+}
+.poza3{
+    width:40%;
+    
+    height: 600px; /* Păstrează proporțiile imaginii */
 }

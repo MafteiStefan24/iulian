@@ -29,22 +29,8 @@ body {
             box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
             padding: 2rem;
         }
-        .videos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-            margin-bottom: 2rem;
-        }
-        .videos video {
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
-            width: 100%;
-            max-width: 400px;
-            height: 240px;
-            object-fit: cover;
-            background: #000;
-        }
+    
+        
         .map-section {
             text-align: center;
         }

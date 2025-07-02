@@ -119,7 +119,7 @@ iframe {
 
     .video {
         height:500px ;
-        width: 1500px ; /* Videoclipurile ocupă 80% din lățimea containerului */
+        width: 80% ; /* Videoclipurile ocupă 80% din lățimea containerului */
         max-width: 640px; /* Limitează lățimea maximă a videoclipurilor pe ecrane mari */
         /* Poți ajusta 'max-width' aici (e.g., 720px, 854px) pentru dimensiunea dorită */
     }

@@ -24,7 +24,7 @@ header {
 
 .container {
     width: 100%; /* Lățime inițială pentru majoritatea ecranelor */
-    max-width: 60%; /* Lățime maximă pentru ecrane mari */
+    max-width: 80%; /* Lățime maximă pentru ecrane mari */
     margin: 20px 0;
     padding: 20px;
     background-color: #00bcdd;
